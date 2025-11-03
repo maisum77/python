@@ -30,7 +30,7 @@
 #     for line in file:
 #         row=line.rstrip().split(",")
 #         print(f"The {row[0]} is in the {row[1]} department")
-    
+
 # studnets=[]
 # with open("students.csv","r") as file:
 #     for line in file:
@@ -47,20 +47,18 @@
 #     print(f"Student={student['name']} department={student['house']}")
 
 import csv
-studnets=[]
+
+studnets = []
 with open("students.csv") as file:
     for line in file:
-        reader=csv.reader(file)
+        reader = csv.reader(file)
         for row in reader:
-            studnets.append({"name":row[0],"dept":row[1]})
+            studnets.append({"name": row[0], "dept": row[1]})
 
 
-    
 def get_student(students):
-    return students['name']
+    return students["name"]
 
-for student in sorted(studnets,key=get_student):
+
+for student in sorted(studnets, key=get_student):
     print(f"Student={student['name']} department={student['dept']}")
-
-    
- 
