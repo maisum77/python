@@ -1,6 +1,7 @@
 a=input("enter a number= ")
 b=input("enter second number= ")
 
+c=int(input("enter value"))
 print ("first num= ", a)
 
 
