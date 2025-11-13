@@ -6,4 +6,4 @@ print ("first num= ", a)
 
 
 print ("second num= ", b)
-print("sum= ",int(a)+int(b))
+print("sum= ",round(float(a)+float(b)))
